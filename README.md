@@ -14,21 +14,21 @@ This is a Java-Springboot based project containing APIs to fetch devices, update
 
 ### Response Body:
 #### Device
-| Attribute Name | Type |
+| Attribute Name | Type |  Valid Values |
 | -- | -- |
 |id|String|
-|name|String|
-|description|String|
-|status|String (READY/NOT_READY|
-|createdDate|Date|
-|lastModifiedDate|Date|
+|name|String| - |
+|description|String| - |
+|status|String | (READY/NOT_READY) |
+|createdDate|Date| - |
+|lastModifiedDate|Date| - |
 
 ### Sim
-| Attribute Name | Type |
+| Attribute Name | Type |  Valid Values |
 | -- | -- |
 |id|String|
-|operatorCode|String|
-|country|String|
-|status|String (Active/Waiting for activation/Deactivated/Blocked)|
-|createdDate|Date|
-|lastModifiedDate|Date|
+|operatorCode|String|-|
+|country|String|-|
+|status|String|(Active/Waiting for activation/Deactivated/Blocked)|
+|createdDate|Date|-|
+|lastModifiedDate|Date|-|
