@@ -1,20 +1,21 @@
 package com.vodafone.iot.api;
 
 import com.vodafone.iot.model.Device;
+import com.vodafone.iot.model.PaginatedResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Set;
 
 @RequestMapping("/device")
 public interface DeviceApi {
 
     @GetMapping
-    ResponseEntity<Set<Device>> getDevice(@RequestParam("simStatus") String simStatus);
+    ResponseEntity<PaginatedResponse<Device>> getDevice(@RequestParam(name = "simStatus") String simStatus,
+                                                        @RequestParam(name = "pageSize", required = false) int pageSize,
+                                                        @RequestParam(name = "pageNumber", required = false) int pageNumber);
 
     @PatchMapping("/{deviceId}")
     ResponseEntity<Device> updateDeviceStatus(@PathVariable("deviceId") String deviceId, @RequestBody Device device);
 
-    @DeleteMapping("/deviceId")
-    void deleteDevice(@PathVariable("deviceId") String deviceId);
+    @DeleteMapping("/{deviceId}")
+    ResponseEntity deleteDevice(@PathVariable("deviceId") String deviceId);
 }

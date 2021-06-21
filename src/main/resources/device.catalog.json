@@ -1,1 +1,18 @@
-[{"id":"device1","name":"Device - 1","description":"This is device - 1","status":"READY","simId":"sim1"},{"id":"device2","name":"Device - 2","description":"This is device - 2","status":"READY","simId":"sim2"},{"id":"device3","name":"Device - 3","description":"This is device - 3","status":"READY","simId":"sim3"},{"id":"device4","name":"Device - 4","description":"This is device - 4","simId":"sim4"}]
+[
+  {"id":"device1","name":"Device - 1","description":"This is device - 1","status":"READY","sim":  {"id": "sim1"}},
+  {"id":"device2","name":"Device - 2","description":"This is device - 2","status":"READY","sim":  {"id": "sim2"}},
+  {"id":"device3","name":"Device - 3","description":"This is device - 3","status":"READY","sim":  {"id": "sim4"}},
+  {"id":"device4","name":"Device - 4","description":"This is device - 4","status":"READY","sim":  {"id": "sim5"}},
+  {"id":"device5","name":"Device - 5","description":"This is device - 1","status":"READY","sim":  {"id": "sim3"}},
+  {"id":"device6","name":"Device - 6","description":"This is device - 2","status":"READY","sim":  {"id": "sim6"}},
+  {"id":"device7","name":"Device - 7","description":"This is device - 3","status":"READY","sim":  {"id": "sim7"}},
+  {"id":"device8","name":"Device - 8","description":"This is device - 4","status":"READY","sim":  {"id": "sim8"}},
+  {"id":"device9","name":"Device - 9","description":"This is device - 1","status":"READY","sim":  {"id": "sim9"}},
+  {"id":"device10","name":"Device - 10","description":"This is device - 2","status":"READY","sim":  {"id": "sim12"}},
+  {"id":"device11", "name":"Device - 11","description":"This is device - 3","status":"NOT_READY","sim":  {"id": "sim14"}},
+  {"id":"device12","name":"Device - 12","description":"This is device - 4","status":"READY","sim":  {"id": "sim15"}},
+  {"id":"device13","name":"Device - 13","description":"This is device - 1","status":"READY","sim":  {"id": "sim13"}},
+  {"id":"device14","name":"Device - 14","description":"This is device - 2","status":"NOT_READY","sim":  {"id": "sim16"}},
+  {"id":"device15","name":"Device - 15","description":"This is device - 3","status":"READY","sim":  {"id": "sim17"}},
+  {"id":"device16","name":"Device - 16","description":"This is device - 4","status":"NOT_READY","sim":  {"id": "sim18"}}
+]

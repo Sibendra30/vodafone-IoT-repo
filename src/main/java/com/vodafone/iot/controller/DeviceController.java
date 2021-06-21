@@ -2,42 +2,39 @@ package com.vodafone.iot.controller;
 
 import com.vodafone.iot.api.DeviceApi;
 import com.vodafone.iot.model.Device;
-import com.vodafone.iot.model.Sim;
+import com.vodafone.iot.model.PaginatedResponse;
+import com.vodafone.iot.model.PaginationMetadata;
 import com.vodafone.iot.service.DeviceService;
-import com.vodafone.iot.service.SimService;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.Set;
-import java.util.stream.Collectors;
 
 @RestController
 public class DeviceController implements DeviceApi {
 
     private final DeviceService deviceService;
-    private final SimService simService;
 
-    public DeviceController(DeviceService deviceService, SimService simService) {
+    public DeviceController(DeviceService deviceService) {
         this.deviceService = deviceService;
-        this.simService = simService;
     }
 
     @Override
-    public ResponseEntity<Set<Device>> getDevice(String simStatus) {
-        Set<Sim> simList = this.simService.getSimByStatus(simStatus);
-        Set<String> simIdList = simList.stream().map(sim -> sim.getSimId()).collect(Collectors.toSet());
-        Set<Device> devices = this.deviceService.getDeviceBySim(simIdList);
-        return new ResponseEntity<>(devices, HttpStatus.OK);
+    public ResponseEntity<PaginatedResponse<Device>> getDevice(String simStatus, int pageSize, int pageNumber) {
+        Page<Device> devices = this.deviceService.getDeviceBySimStatus(simStatus, pageSize, pageNumber);
+        return new ResponseEntity<>(new PaginatedResponse<>(devices.toSet(),
+                new PaginationMetadata(pageSize, pageNumber, devices.getTotalElements(), devices.getTotalPages())), HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<Device> updateDeviceStatus(String deviceId, Device device) {
-        return null;
+        Device updatedDevice = this.deviceService.updateDeviceConfigurationStatus(device.getStatus(), deviceId);
+        return new ResponseEntity<>(updatedDevice, HttpStatus.OK);
     }
 
     @Override
-    public void deleteDevice(String deviceId) {
-
+    public ResponseEntity deleteDevice(String deviceId) {
+        this.deviceService.deleteDevice(deviceId);
+        return ResponseEntity.noContent().build();
     }
 }

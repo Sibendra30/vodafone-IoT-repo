@@ -23,29 +23,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb679d66-d386-44fe-9678-031cd206d658" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/IotApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/api/DeviceApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/controller/DeviceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/error/DeviceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/model/Device.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/model/Sim.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/product/ConfigureProductCatalog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/repository/DeviceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/repository/SimRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/DeviceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/DeviceServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/SimService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/SimServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/device.catalog.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sim.catalog.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/vodafone/iot/IotApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/java/DeviceControllerIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/error/ErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/model/PaginatedResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/model/PaginationMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vodafone/iot/controller/DeviceControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vodafone/iot/service/DeviceServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/api/DeviceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/api/DeviceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/controller/DeviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/controller/DeviceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/model/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/model/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/model/Sim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/model/Sim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/product/ConfigureProductCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/product/ConfigureProductCatalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/repository/DeviceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/repository/DeviceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/repository/SimRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/repository/SimRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/DeviceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/DeviceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/DeviceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/DeviceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/SimService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/SimService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/SimServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/SimServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/device.catalog.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/device.catalog.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sim.catalog.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sim.catalog.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vodafone/iot/IotApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,18 +83,108 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/vodafone/iot" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/vodafone/iot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.vodafone.iot" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.DeviceServiceImplTest.deleteDevice">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeviceServiceImplTest.deleteDevice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vodafone-IoT-repo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vodafone.iot.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vodafone.iot.service" />
+      <option name="MAIN_CLASS_NAME" value="com.vodafone.iot.service.DeviceServiceImplTest" />
+      <option name="METHOD_NAME" value="deleteDevice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeviceServiceImplTest.deleteDevice_InvalidDeviceId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vodafone-IoT-repo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vodafone.iot.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vodafone.iot.service" />
+      <option name="MAIN_CLASS_NAME" value="com.vodafone.iot.service.DeviceServiceImplTest" />
+      <option name="METHOD_NAME" value="deleteDevice_InvalidDeviceId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeviceServiceImplTest.getDeviceBySimStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vodafone-IoT-repo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vodafone.iot.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vodafone.iot.service" />
+      <option name="MAIN_CLASS_NAME" value="com.vodafone.iot.service.DeviceServiceImplTest" />
+      <option name="METHOD_NAME" value="getDeviceBySimStatus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeviceServiceImplTest.updateDeviceConfigStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vodafone-IoT-repo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vodafone.iot.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vodafone.iot.service" />
+      <option name="MAIN_CLASS_NAME" value="com.vodafone.iot.service.DeviceServiceImplTest" />
+      <option name="METHOD_NAME" value="updateDeviceConfigStatus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeviceServiceImplTest.updateDeviceConfigStatus_invalidDeviceId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vodafone-IoT-repo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vodafone.iot.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vodafone.iot.service" />
+      <option name="MAIN_CLASS_NAME" value="com.vodafone.iot.service.DeviceServiceImplTest" />
+      <option name="METHOD_NAME" value="updateDeviceConfigStatus_invalidDeviceId" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,6 +196,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DeviceServiceImplTest.deleteDevice" />
+        <item itemvalue="JUnit.DeviceServiceImplTest.deleteDevice_InvalidDeviceId" />
+        <item itemvalue="JUnit.DeviceServiceImplTest.updateDeviceConfigStatus_invalidDeviceId" />
+        <item itemvalue="JUnit.DeviceServiceImplTest.updateDeviceConfigStatus" />
+        <item itemvalue="JUnit.DeviceServiceImplTest.getDeviceBySimStatus" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -116,6 +215,10 @@
       <option name="presentableId" value="Default" />
       <updated>1624134914650</updated>
       <workItem from="1624134916060" duration="13899000" />
+      <workItem from="1624264503947" duration="202000" />
+      <workItem from="1624264737559" duration="427000" />
+      <workItem from="1624265227413" duration="4594000" />
+      <workItem from="1624269857803" duration="15302000" />
     </task>
     <servers />
   </component>
@@ -132,84 +235,116 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="805" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1624208178395">
+    <state x="899" y="429" key="#Assign_Data_Sources" timestamp="1624266351673">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="805" y="246" key="#com.intellij.ide.util.MemberChooser/65.24.1855.1056@65.24.1855.1056" timestamp="1624208178395" />
+    <state x="899" y="429" key="#Assign_Data_Sources/65.24.1855.1056@65.24.1855.1056" timestamp="1624266351673" />
+    <state x="805" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1624271058338">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="805" y="246" key="#com.intellij.ide.util.MemberChooser/65.24.1855.1056@65.24.1855.1056" timestamp="1624271058338" />
     <state x="481" y="24" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1624200426832">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="481" y="24" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1624200426832" />
-    <state x="755" y="283" key="#xdebugger.evaluate" timestamp="1624209887689">
+    <state x="755" y="283" key="#xdebugger.evaluate" timestamp="1624267901660">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="755" y="283" key="#xdebugger.evaluate/65.24.1855.1056@65.24.1855.1056" timestamp="1624209887689" />
-    <state width="450" height="506" key="DebuggerActiveHint" timestamp="1624207502416">
+    <state x="755" y="283" key="#xdebugger.evaluate/65.24.1855.1056@65.24.1855.1056" timestamp="1624267901660" />
+    <state width="1124" height="506" key="DebuggerActiveHint" timestamp="1624272848761">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="450" height="506" key="DebuggerActiveHint/65.24.1855.1056@65.24.1855.1056" timestamp="1624207502416" />
-    <state width="1809" height="2" key="GridCell.Tab.0.bottom" timestamp="1624209844287">
+    <state width="1124" height="506" key="DebuggerActiveHint/65.24.1855.1056@65.24.1855.1056" timestamp="1624272848760" />
+    <state x="780" y="297" key="FileChooserDialogImpl" timestamp="1624264695826">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="2" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1624209844287" />
-    <state width="1809" height="2" key="GridCell.Tab.0.center" timestamp="1624209844286">
+    <state x="780" y="297" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1624264695826" />
+    <state width="1809" height="373" key="GridCell.Tab.0.bottom" timestamp="1624286640283">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="2" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1624209844286" />
-    <state width="1809" height="2" key="GridCell.Tab.0.left" timestamp="1624209844286">
+    <state width="1809" height="373" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1624286640283" />
+    <state width="1809" height="373" key="GridCell.Tab.0.center" timestamp="1624286640282">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="2" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1624209844286" />
-    <state width="1809" height="2" key="GridCell.Tab.0.right" timestamp="1624209844287">
+    <state width="1809" height="373" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1624286640282" />
+    <state width="1809" height="373" key="GridCell.Tab.0.left" timestamp="1624286640282">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="2" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1624209844287" />
-    <state width="1809" height="352" key="GridCell.Tab.1.bottom" timestamp="1624209857999">
+    <state width="1809" height="373" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1624286640282" />
+    <state width="1809" height="373" key="GridCell.Tab.0.right" timestamp="1624286640282">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="352" key="GridCell.Tab.1.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1624209857999" />
-    <state width="1809" height="352" key="GridCell.Tab.1.center" timestamp="1624209857998">
+    <state width="1809" height="373" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1624286640282" />
+    <state width="1809" height="369" key="GridCell.Tab.1.bottom" timestamp="1624285139168">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="352" key="GridCell.Tab.1.center/65.24.1855.1056@65.24.1855.1056" timestamp="1624209857998" />
-    <state width="1809" height="352" key="GridCell.Tab.1.left" timestamp="1624209857998">
+    <state width="1809" height="369" key="GridCell.Tab.1.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1624285139168" />
+    <state width="1809" height="369" key="GridCell.Tab.1.center" timestamp="1624285139167">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="352" key="GridCell.Tab.1.left/65.24.1855.1056@65.24.1855.1056" timestamp="1624209857998" />
-    <state width="1809" height="352" key="GridCell.Tab.1.right" timestamp="1624209857999">
+    <state width="1809" height="369" key="GridCell.Tab.1.center/65.24.1855.1056@65.24.1855.1056" timestamp="1624285139167" />
+    <state width="1809" height="369" key="GridCell.Tab.1.left" timestamp="1624285139167">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="352" key="GridCell.Tab.1.right/65.24.1855.1056@65.24.1855.1056" timestamp="1624209857999" />
-    <state width="1809" height="2" key="GridCell.Tab.2.bottom" timestamp="1624209844072">
+    <state width="1809" height="369" key="GridCell.Tab.1.left/65.24.1855.1056@65.24.1855.1056" timestamp="1624285139167" />
+    <state width="1809" height="369" key="GridCell.Tab.1.right" timestamp="1624285139167">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="2" key="GridCell.Tab.2.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1624209844072" />
-    <state width="1809" height="2" key="GridCell.Tab.2.center" timestamp="1624209844071">
+    <state width="1809" height="369" key="GridCell.Tab.1.right/65.24.1855.1056@65.24.1855.1056" timestamp="1624285139167" />
+    <state width="1809" height="339" key="GridCell.Tab.2.bottom" timestamp="1624274409136">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="2" key="GridCell.Tab.2.center/65.24.1855.1056@65.24.1855.1056" timestamp="1624209844071" />
-    <state width="1809" height="2" key="GridCell.Tab.2.left" timestamp="1624209844071">
+    <state width="1809" height="339" key="GridCell.Tab.2.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1624274409136" />
+    <state width="1809" height="339" key="GridCell.Tab.2.center" timestamp="1624274409135">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="2" key="GridCell.Tab.2.left/65.24.1855.1056@65.24.1855.1056" timestamp="1624209844071" />
-    <state width="1809" height="2" key="GridCell.Tab.2.right" timestamp="1624209844071">
+    <state width="1809" height="339" key="GridCell.Tab.2.center/65.24.1855.1056@65.24.1855.1056" timestamp="1624274409135" />
+    <state width="1809" height="339" key="GridCell.Tab.2.left" timestamp="1624274409134">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="2" key="GridCell.Tab.2.right/65.24.1855.1056@65.24.1855.1056" timestamp="1624209844071" />
-    <state x="769" y="319" key="chooseDestDirectoryDialog" timestamp="1624202146282">
+    <state width="1809" height="339" key="GridCell.Tab.2.left/65.24.1855.1056@65.24.1855.1056" timestamp="1624274409134" />
+    <state width="1809" height="339" key="GridCell.Tab.2.right" timestamp="1624274409135">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="769" y="319" key="chooseDestDirectoryDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1624202146282" />
+    <state width="1809" height="339" key="GridCell.Tab.2.right/65.24.1855.1056@65.24.1855.1056" timestamp="1624274409135" />
+    <state x="529" y="196" width="924" height="682" key="Maven.ArtifactSearchDialog" timestamp="1624265126298">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="529" y="196" width="924" height="682" key="Maven.ArtifactSearchDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1624265126298" />
+    <state width="927" height="528" key="XDebugger.FullValuePopup" timestamp="1624272692288">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="927" height="528" key="XDebugger.FullValuePopup/65.24.1855.1056@65.24.1855.1056" timestamp="1624272692288" />
+    <state x="769" y="319" key="chooseDestDirectoryDialog" timestamp="1624285461378">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="769" y="319" key="chooseDestDirectoryDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1624285461378" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/DeviceServiceImpl.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/vodafone/iot/controller/DeviceController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/vodafone/iot/error/ErrorHandler.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/vodafone/iot/controller/DeviceController.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/vodafone/iot/controller/DeviceController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

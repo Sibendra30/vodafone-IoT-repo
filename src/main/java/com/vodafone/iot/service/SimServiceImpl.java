@@ -15,10 +15,6 @@ public class SimServiceImpl implements SimService {
         this.simRepository = simRepository;
     }
 
-    public Set<Sim> getSimByStatus(String filter) {
-        return this.simRepository.findByStatus(filter);
-    }
-
     public void saveBulkSim(Iterable<Sim> sims) {
         this.simRepository.saveAll(sims);
     }

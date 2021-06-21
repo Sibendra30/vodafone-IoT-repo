@@ -1,9 +1,11 @@
 package com.vodafone.iot.service;
 
 import com.vodafone.iot.model.Device;
+import org.springframework.data.domain.Page;
 
-import java.util.Set;
 
 public interface DeviceService {
-    Set<Device> getDeviceBySim(Set<String> simIds);
+    Page<Device> getDeviceBySimStatus(String simStatus, int pageSize, int pageNumber);
+    Device updateDeviceConfigurationStatus(String deviceConfigStatus, String deviceId);
+    void deleteDevice(String deviceId);
 }

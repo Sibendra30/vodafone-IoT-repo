@@ -39,13 +39,6 @@ public class ConfigureProductCatalog {
     }
 
     public void insertCatalogProduct() throws URISyntaxException, IOException {
-        byte [] deviceCatalogFileContent = Files.readAllBytes(
-                Paths.get(getClass().getClassLoader()
-                        .getResource(deviceCatalogFilename)
-                        .toURI()));
-        Set<Device> devices = this.objectMapper.readValue(deviceCatalogFileContent, new TypeReference<Set<Device>>(){});
-        this.deviceService.saveBulkDevice(devices);
-
         byte [] simCatalogFileContent = Files.readAllBytes(
                 Paths.get(getClass().getClassLoader()
                         .getResource(simCatalogFilename)
@@ -53,6 +46,12 @@ public class ConfigureProductCatalog {
 
         Set<Sim> sims = this.objectMapper.readValue(simCatalogFileContent, new TypeReference<Set<Sim>>(){});
         this.simService.saveBulkSim(sims);
-        log.info("Device catalog uploaded successfully");
+
+        byte [] deviceCatalogFileContent = Files.readAllBytes(
+                Paths.get(getClass().getClassLoader()
+                        .getResource(deviceCatalogFilename)
+                        .toURI()));
+        Set<Device> devices = this.objectMapper.readValue(deviceCatalogFileContent, new TypeReference<Set<Device>>(){});
+        this.deviceService.saveBulkDevice(devices);
     }
 }
