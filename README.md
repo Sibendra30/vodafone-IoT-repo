@@ -5,11 +5,12 @@ This is a Java-Springboot based project containing APIs to fetch devices, update
 
 ## API Details
 1. *GET /device* - This API will return the paginated response for the given sim_status.
+
 | Param | Type | Default | Valid Values |
 | -- | -- | -- | -- |
-|simStatus|String|Active| Active/Waiting for activation/Deactivated/Blocked
-|pageSize|Integer|10| -
-|pageNumber|Integer|1| -
+| simStatus | String | Active | Active/Waiting for activation/Deactivated/Blocked |
+| pageSize | Integer | 10 | - |
+| pageNumber | Integer | 1 | - |
 
 ### Response Body:
 #### Device
