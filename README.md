@@ -14,8 +14,9 @@ This is a Java-Springboot based project containing APIs to fetch devices, update
 
 ### Response Body:
 #### Device
+
 | Attribute Name | Type |  Valid Values |
-| -- | -- |
+| -- | -- | -- |
 |id|String|
 |name|String| - |
 |description|String| - |
@@ -25,7 +26,7 @@ This is a Java-Springboot based project containing APIs to fetch devices, update
 
 ### Sim
 | Attribute Name | Type |  Valid Values |
-| -- | -- |
+| -- | -- | -- |
 |id|String|
 |operatorCode|String|-|
 |country|String|-|
