@@ -22,16 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb679d66-d386-44fe-9678-031cd206d658" name="Default Changelist" comment="Adding Unit TCs">
-      <change afterPath="$PROJECT_DIR$/src/it/java/com/vodafone/iot/controller/DeviceControllerIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/resources/device.catalog.test.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/resources/sim.catalog.test.json" afterDir="false" />
+    <list default="true" id="cb679d66-d386-44fe-9678-031cd206d658" name="Default Changelist" comment="Adding integration test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/model/Sim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/model/Sim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vodafone/iot/controller/DeviceControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vodafone/iot/controller/DeviceControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vodafone/iot/service/DeviceServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vodafone/iot/service/DeviceServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/DeviceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/DeviceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/SimServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/SimServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +200,7 @@
       <workItem from="1624264503947" duration="202000" />
       <workItem from="1624264737559" duration="427000" />
       <workItem from="1624265227413" duration="4594000" />
-      <workItem from="1624269857803" duration="21438000" />
+      <workItem from="1624269857803" duration="22979000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Unit TCs">
       <created>1624287066794</created>
@@ -214,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624287066794</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding integration test">
+      <created>1624293401899</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1624293401899</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +236,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding Unit TCs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Unit TCs" />
+    <MESSAGE value="Adding integration test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding integration test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="899" y="429" key="#Assign_Data_Sources" timestamp="1624266351673">
@@ -257,30 +260,30 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state width="1124" height="506" key="DebuggerActiveHint/65.24.1855.1056@65.24.1855.1056" timestamp="1624272848760" />
-    <state x="165" y="96" width="1655" height="884" key="DiffContextDialog" timestamp="1624287588801">
+    <state x="165" y="96" width="1655" height="884" key="DiffContextDialog" timestamp="1624298090312">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="165" y="96" width="1655" height="884" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1624287588801" />
+    <state x="165" y="96" width="1655" height="884" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1624298090312" />
     <state x="780" y="297" key="FileChooserDialogImpl" timestamp="1624264695826">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="780" y="297" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1624264695826" />
-    <state width="1809" height="308" key="GridCell.Tab.0.bottom" timestamp="1624293352579">
+    <state width="1809" height="541" key="GridCell.Tab.0.bottom" timestamp="1624298097597">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="308" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1624293352579" />
-    <state width="1809" height="308" key="GridCell.Tab.0.center" timestamp="1624293352579">
+    <state width="1809" height="541" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1624298097597" />
+    <state width="1809" height="541" key="GridCell.Tab.0.center" timestamp="1624298097597">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="308" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1624293352579" />
-    <state width="1809" height="308" key="GridCell.Tab.0.left" timestamp="1624293352579">
+    <state width="1809" height="541" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1624298097597" />
+    <state width="1809" height="541" key="GridCell.Tab.0.left" timestamp="1624298097597">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="308" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1624293352579" />
-    <state width="1809" height="308" key="GridCell.Tab.0.right" timestamp="1624293352579">
+    <state width="1809" height="541" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1624298097597" />
+    <state width="1809" height="541" key="GridCell.Tab.0.right" timestamp="1624298097597">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="308" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1624293352579" />
+    <state width="1809" height="541" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1624298097597" />
     <state width="1809" height="244" key="GridCell.Tab.1.bottom" timestamp="1624291952290">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
@@ -321,10 +324,10 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="237" y="117" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1624291616022" />
-    <state x="592" y="261" key="Vcs.Push.Dialog.v2" timestamp="1624287068430">
+    <state x="592" y="261" key="Vcs.Push.Dialog.v2" timestamp="1624293403354">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="592" y="261" key="Vcs.Push.Dialog.v2/65.24.1855.1056@65.24.1855.1056" timestamp="1624287068430" />
+    <state x="592" y="261" key="Vcs.Push.Dialog.v2/65.24.1855.1056@65.24.1855.1056" timestamp="1624293403354" />
     <state width="927" height="528" key="XDebugger.FullValuePopup" timestamp="1624272692288">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
@@ -356,6 +359,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/vodafone/iot/controller/DeviceController.java</url>
           <line>30</line>
           <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/vodafone/iot/service/DeviceServiceImpl.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

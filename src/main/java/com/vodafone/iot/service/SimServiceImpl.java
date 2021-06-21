@@ -4,8 +4,6 @@ import com.vodafone.iot.model.Sim;
 import com.vodafone.iot.repository.SimRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
-
 @Service
 public class SimServiceImpl implements SimService {
 

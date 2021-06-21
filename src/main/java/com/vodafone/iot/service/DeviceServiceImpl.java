@@ -2,13 +2,11 @@ package com.vodafone.iot.service;
 
 import com.vodafone.iot.error.DeviceNotFoundException;
 import com.vodafone.iot.model.Device;
-import com.vodafone.iot.model.Sim;
 import com.vodafone.iot.repository.DeviceRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
 import java.util.*;
 
 @Service
