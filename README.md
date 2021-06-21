@@ -3,8 +3,17 @@
 
 This is a Java-Springboot based project containing APIs to fetch devices, update device configuration and delete device.
 
+## How to test the project ?
+*mvn clean test*
+
+## How to run integration test ?
+*mvn clean verify*
+
+## How to run the project
+*mvn spring-boot:run*
+
 ## Pre-Configured Products:
-src/main/resources directory contains device.catalog.json and sim.catalog.json which are used to pre-loads the data in to DEVICE and SIM table.
+*src/main/resources* directory contains device.catalog.json and sim.catalog.json which are used to pre-loads the data in to DEVICE and SIM table.
 
 #### DEVICE table:
 | Column | Type | Description |
@@ -59,8 +68,8 @@ src/main/resources directory contains device.catalog.json and sim.catalog.json w
 |lastModifiedDate|Date|-|
 
 2. *PATCH /device/{deviceId}* - This API will be used to update the configuration status of device.
-Sample request body:
-`{"status": "Ready"}`
+#### Sample request body:
+`{"status": "READY"}`
 
 3. *DELETE /device/{deviceId}* - This API will be used to remove device with given device-id.
 

@@ -198,7 +198,7 @@
       <workItem from="1624264503947" duration="202000" />
       <workItem from="1624264737559" duration="427000" />
       <workItem from="1624265227413" duration="4594000" />
-      <workItem from="1624269857803" duration="24165000" />
+      <workItem from="1624269857803" duration="24290000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Unit TCs">
       <created>1624287066794</created>
@@ -249,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624299348467</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adding Readme">
+      <created>1624300017313</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1624300017313</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,10 +365,10 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="237" y="117" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1624291616022" />
-    <state x="592" y="261" key="Vcs.Push.Dialog.v2" timestamp="1624299349733">
+    <state x="592" y="261" key="Vcs.Push.Dialog.v2" timestamp="1624300018749">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="592" y="261" key="Vcs.Push.Dialog.v2/65.24.1855.1056@65.24.1855.1056" timestamp="1624299349733" />
+    <state x="592" y="261" key="Vcs.Push.Dialog.v2/65.24.1855.1056@65.24.1855.1056" timestamp="1624300018749" />
     <state width="927" height="528" key="XDebugger.FullValuePopup" timestamp="1624272692288">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
