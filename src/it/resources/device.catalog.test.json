@@ -1,0 +1,4 @@
+[
+  {"id":"device1","name":"Device - 1","description":"This is device - 1","status":"READY","sim":  {"id": "sim1"}},
+  {"id":"device16","name":"Device - 16","description":"This is device - 4","status":"NOT_READY","sim":  {"id": "sim18"}}
+]

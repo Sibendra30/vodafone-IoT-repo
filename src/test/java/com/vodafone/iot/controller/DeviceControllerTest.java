@@ -40,7 +40,7 @@ public class DeviceControllerTest {
     @Test
     void getDevicesByStatus() throws Exception {
         Device expectedDevice = new Device("device1", "Device-1", "Device 1", "READY",
-                new Sim("OP1", "GB", "Active", new Date(), null, "sim1"),
+                new Sim("sim1", "OP1", "GB", "Active", new Date(), null),
                 new Date(), null);
         Page<Device> serviceResponse = new PageImpl<>(Collections.singletonList(expectedDevice), PageRequest.of(1, 10), 1);
         when(deviceService.getDeviceBySimStatus("Active", 10, 1)).thenReturn(serviceResponse);
@@ -75,7 +75,7 @@ public class DeviceControllerTest {
     @Test
     void updateDeviceConfigStatus() throws Exception {
         Device expectedDevice = new Device("device1", "Device-1", "Device 1", "READY",
-                new Sim("OP1", "GB", "Active", new Date(), null, "sim1"),
+                new Sim("sim1","OP1", "GB", "Active", new Date(), null),
                 new Date(), null);
         when(deviceService.updateDeviceConfigurationStatus("READY", "device1")).thenReturn(expectedDevice);
         mockMvc.perform(MockMvcRequestBuilders.patch("/device/device1")

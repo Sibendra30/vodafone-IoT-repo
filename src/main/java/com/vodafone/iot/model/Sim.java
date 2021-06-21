@@ -14,13 +14,13 @@ import java.util.Date;
 @Data
 @Entity
 public class Sim {
-
+    @Id
+    private String id;
     private String operatorCode;
     private String country;
     private String status;
     private Date createdDate = new Date();
     private Date lastModifiedDate;
-    @Id
-    private String id;
+
 }
 

@@ -38,7 +38,7 @@ public class DeviceServiceImplTest {
     @Test
     void getDeviceBySimStatus() {
         Device expectedDevice = new Device("device1", "Device-1", "Device 1", "READY",
-                new Sim("OP1", "GB", "Active", new Date(), null, "sim1"),
+                new Sim("sim1", "OP1", "GB", "Active", new Date(), null),
                 new Date(), null);
         Page<Device> expectedResponse = new PageImpl<>(Collections.singletonList(expectedDevice), PageRequest.of(1, 10), 1);
         when(deviceRepository
@@ -53,7 +53,7 @@ public class DeviceServiceImplTest {
     @Test
     void updateDeviceConfigStatus() {
         Device expectedDevice = new Device("device1", "Device-1", "Device 1", "READY",
-                new Sim("OP1", "GB", "Active", new Date(), null, "sim1"),
+                new Sim("sim1", "OP1", "GB", "Active", new Date(), null),
                 new Date(), null);
         when(deviceRepository.findById("device1")).thenReturn(Optional.of(expectedDevice));
         when(deviceRepository.save(expectedDevice)).thenReturn(expectedDevice);
@@ -73,7 +73,7 @@ public class DeviceServiceImplTest {
     @Test
     void deleteDevice() {
         Device expectedDevice = new Device("device1", "Device-1", "Device 1", "READY",
-                new Sim("OP1", "GB", "Active", new Date(), null, "sim1"),
+                new Sim("sim1", "OP1", "GB", "Active", new Date(), null),
                 new Date(), null);
         when(deviceRepository.findById("device1")).thenReturn(Optional.of(expectedDevice));
         deviceService.deleteDevice("device1");

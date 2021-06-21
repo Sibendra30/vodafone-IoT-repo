@@ -1,0 +1,22 @@
+[
+  {"id":"sim1","operatorCode":"OP1","country":"GB","status":"Active"},
+  {"id":"sim2","operatorCode":"OP2","country":"GB","status":"Active"},
+  {"id":"sim3","operatorCode":"OP1","country":"GB","status":"Waiting for activation"},
+  {"id":"sim4","operatorCode":"OP2","country":"GB","status":"Active"},
+  {"id":"sim5","operatorCode":"OP1","country":"GB","status":"Deactivated"},
+  {"id":"sim6","operatorCode":"OP2","country":"GB","status":"Active"},
+
+  {"id":"sim7","operatorCode":"OP1","country":"GB","status":"Active"},
+  {"id":"sim8","operatorCode":"OP2","country":"GB","status":"Active"},
+  {"id":"sim9","operatorCode":"OP1","country":"GB","status":"Waiting for activation"},
+  {"id":"sim10","operatorCode":"OP2","country":"GB","status":"Active"},
+  {"id":"sim11","operatorCode":"OP1","country":"GB","status":"Deactivated"},
+  {"id":"sim12","operatorCode":"OP2","country":"GB","status":"Active"},
+
+  {"id":"sim13","operatorCode":"OP1","country":"GB","status":"Active"},
+  {"id":"sim14","operatorCode":"OP2","country":"GB","status":"Active"},
+  {"id":"sim15","operatorCode":"OP1","country":"GB","status":"Waiting for activation"},
+  {"id":"sim16","operatorCode":"OP2","country":"GB","status":"Active"},
+  {"id":"sim17","operatorCode":"OP1","country":"GB","status":"Deactivated"},
+  {"id":"sim18","operatorCode":"OP2","country":"GB","status":"Active"}
+]
