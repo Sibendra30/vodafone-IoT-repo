@@ -54,6 +54,7 @@ This is a Java-Springboot based project containing APIs to fetch devices, update
 |name|String| - |
 |description|String| - |
 |status|String | (READY/NOT_READY) |
+|sim|Sim | - |
 |createdDate|Date| - |
 |lastModifiedDate|Date| - |
 
@@ -73,4 +74,4 @@ This is a Java-Springboot based project containing APIs to fetch devices, update
 
 3. *DELETE /device/{deviceId}* - This API will be used to remove device with given device-id.
 
-Please refer to api.spec.yaml for more details.
+*Please refer to api.spec.yaml for more details.*
