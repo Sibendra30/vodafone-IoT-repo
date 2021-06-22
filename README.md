@@ -41,7 +41,7 @@ This is a Java-Springboot based project containing APIs to fetch devices, update
 
 | Param | Type | Default | Valid Values |
 | -- | -- | -- | -- |
-| simStatus | String | Active | Active/Waiting for activation/Deactivated/Blocked |
+| simStatus | String | Active | Active/Waiting_for_activation/Deactivated/Blocked |
 | pageSize | Integer | 10 | - |
 | pageNumber | Integer | 1 | - |
 
@@ -64,7 +64,7 @@ This is a Java-Springboot based project containing APIs to fetch devices, update
 |id|String| - |
 |operatorCode|String|-|
 |country|String|-|
-|status|String|(Active/Waiting for activation/Deactivated/Blocked)|
+|status|String|(Active/Waiting_for_activation/Deactivated/Blocked)|
 |createdDate|Date|-|
 |lastModifiedDate|Date|-|
 
