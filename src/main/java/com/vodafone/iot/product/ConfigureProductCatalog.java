@@ -8,8 +8,10 @@ import com.vodafone.iot.service.DeviceServiceImpl;
 import com.vodafone.iot.service.SimServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.stereotype.Component;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
@@ -20,38 +22,28 @@ import java.util.Set;
 @Slf4j
 public class ConfigureProductCatalog {
 
-    private final String deviceCatalogFilename;
-    private final String simCatalogFilename;
+    private final File deviceCatalogFile;
+    private final File simCatalogFile;
     private final DeviceServiceImpl deviceService;
     private final SimServiceImpl simService;
     private final ObjectMapper objectMapper;
 
-    public ConfigureProductCatalog(@Value("${device.catalog.file}") String deviceCatalogFilename,
-                                   @Value("${sim.catalog.file}") String simCatalogFilename,
+    public ConfigureProductCatalog(@Value("${device.catalog.file}") FileSystemResource deviceCatalogFileResource,
+                                   @Value("${sim.catalog.file}") FileSystemResource simCatalogFileResource,
                                    DeviceServiceImpl deviceService,
                                    SimServiceImpl simService, ObjectMapper objectMapper) throws IOException, URISyntaxException {
-        this.deviceCatalogFilename = deviceCatalogFilename;
-        this.simCatalogFilename = simCatalogFilename;
+        this.deviceCatalogFile = deviceCatalogFileResource.getFile();
+        this.simCatalogFile = simCatalogFileResource.getFile();
         this.deviceService = deviceService;
         this.simService = simService;
         this.objectMapper = objectMapper;
         this.insertCatalogProduct();
     }
 
-    public void insertCatalogProduct() throws URISyntaxException, IOException {
-        byte [] simCatalogFileContent = Files.readAllBytes(
-                Paths.get(getClass().getClassLoader()
-                        .getResource(simCatalogFilename)
-                        .toURI()));
-
-        Set<Sim> sims = this.objectMapper.readValue(simCatalogFileContent, new TypeReference<Set<Sim>>(){});
+    public void insertCatalogProduct() throws IOException {
+        Set<Sim> sims = this.objectMapper.readValue(simCatalogFile, new TypeReference<Set<Sim>>(){});
         this.simService.saveBulkSim(sims);
-
-        byte [] deviceCatalogFileContent = Files.readAllBytes(
-                Paths.get(getClass().getClassLoader()
-                        .getResource(deviceCatalogFilename)
-                        .toURI()));
-        Set<Device> devices = this.objectMapper.readValue(deviceCatalogFileContent, new TypeReference<Set<Device>>(){});
+        Set<Device> devices = this.objectMapper.readValue(deviceCatalogFile, new TypeReference<Set<Device>>(){});
         this.deviceService.saveBulkDevice(devices);
     }
 }

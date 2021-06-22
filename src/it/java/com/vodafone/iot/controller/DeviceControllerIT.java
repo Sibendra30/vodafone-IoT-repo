@@ -1,9 +1,6 @@
 package com.vodafone.iot.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.vodafone.iot.model.Device;
-import com.vodafone.iot.model.Sim;
-import com.vodafone.iot.service.DeviceService;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
@@ -32,19 +29,19 @@ public class DeviceControllerIT {
     @Order(1)
     void getDevicesByStatus() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/device")
-                .param("simStatus", "Waiting_for_activation")
+                .param("simStatus", "Active")
                 .param("pageNumber", "1")
                 .param("pageSize", "10"))
                 .andExpect(MockMvcResultMatchers.status().is(HttpStatus.OK.value()))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.items", Matchers.notNullValue()))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.items[0].id", Matchers.notNullValue()))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.items[0].status", Matchers.is("READY")))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.items[0].sim.status", Matchers.is("Waiting_for_activation")))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.items[0].sim.status", Matchers.is("Active")))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.metadata", Matchers.notNullValue()))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.metadata.pageNumber", Matchers.is(1)))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.metadata.pageSize", Matchers.is(10)))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.metadata.totalElements", Matchers.is(11)))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.metadata.totalPages", Matchers.is(2)))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.metadata.totalElements", Matchers.is(1)))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.metadata.totalPages", Matchers.is(1)))
                 .andReturn();
     }
 
