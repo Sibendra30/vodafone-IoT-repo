@@ -1,0 +1,208 @@
+---
+openapi: 3.0.1
+info:
+  title: OpenAPI definition
+  version: v0
+servers:
+  - url: http://localhost:8091
+    description: Generated server url
+paths:
+  "/device/{deviceId}":
+    delete:
+      tags:
+        - device-controller
+      operationId: deleteDevice
+      parameters:
+        - name: deviceId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            "*/*":
+              schema:
+                type: string
+        '400':
+          description: Bad Request
+          content:
+            "*/*":
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found
+          content:
+            "*/*":
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal Server Error
+          content:
+            "*/*":
+              schema:
+                $ref: '#/components/schemas/Error'
+    patch:
+      tags:
+        - device-controller
+      operationId: updateDeviceStatus
+      parameters:
+        - name: deviceId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              "$ref": "#/components/schemas/Device"
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            "*/*":
+              schema:
+                "$ref": "#/components/schemas/Device"
+        '400':
+          description: Bad Request
+          content:
+            "*/*":
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found
+          content:
+            "*/*":
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal Server Error
+          content:
+            "*/*":
+              schema:
+                $ref: '#/components/schemas/Error'
+  "/device":
+    get:
+      tags:
+        - device-controller
+      operationId: getDevice
+      parameters:
+        - name: simStatus
+          in: query
+          required: false
+          schema:
+            type: string
+            default: Active
+        - name: pageSize
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 10
+        - name: pageNumber
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 1
+      responses:
+        '200':
+          description: OK
+          content:
+            "*/*":
+              schema:
+                "$ref": "#/components/schemas/PaginatedResponseDevice"
+        '400':
+          description: Bad Request
+          content:
+            "*/*":
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found
+          content:
+            "*/*":
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal Server Error
+          content:
+            "*/*":
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    Device:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        status:
+          type: string
+        sim:
+          "$ref": "#/components/schemas/Sim"
+        createdDate:
+          type: string
+          format: date-time
+        lastModifiedDate:
+          type: string
+          format: date-time
+    Sim:
+      type: object
+      properties:
+        id:
+          type: string
+        operatorCode:
+          type: string
+        country:
+          type: string
+        status:
+          type: string
+        createdDate:
+          type: string
+          format: date-time
+        lastModifiedDate:
+          type: string
+          format: date-time
+    PaginatedResponseDevice:
+      type: object
+      properties:
+        items:
+          uniqueItems: true
+          type: array
+          items:
+            "$ref": "#/components/schemas/Device"
+        metadata:
+          "$ref": "#/components/schemas/PaginationMetadata"
+    PaginationMetadata:
+      type: object
+      properties:
+        pageSize:
+          type: integer
+          format: int32
+        pageNumber:
+          type: integer
+          format: int32
+        totalElements:
+          type: integer
+          format: int64
+        totalPages:
+          type: integer
+          format: int32
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+        message:
+          type: string
+

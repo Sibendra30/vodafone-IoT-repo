@@ -1,6 +1,7 @@
 package com.vodafone.iot.controller;
 
 import com.vodafone.iot.api.DeviceApi;
+import com.vodafone.iot.error.InvalidStatusException;
 import com.vodafone.iot.model.Device;
 import com.vodafone.iot.model.PaginatedResponse;
 import com.vodafone.iot.model.PaginationMetadata;
@@ -28,8 +29,11 @@ public class DeviceController implements DeviceApi {
 
     @Override
     public ResponseEntity<Device> updateDeviceStatus(String deviceId, Device device) {
-        Device updatedDevice = this.deviceService.updateDeviceConfigurationStatus(device.getStatus(), deviceId);
-        return new ResponseEntity<>(updatedDevice, HttpStatus.OK);
+        if ("READY".equals(device.getStatus()) || "NOT_READY".equals(device.getStatus())) {
+            Device updatedDevice = this.deviceService.updateDeviceConfigurationStatus(device.getStatus(), deviceId);
+            return new ResponseEntity<>(updatedDevice, HttpStatus.OK);
+        }
+       throw new InvalidStatusException("Invalid status. Valid values for status are - READY/NOT_READY");
     }
 
     @Override

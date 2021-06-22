@@ -38,4 +38,13 @@ public class ErrorHandler {
             put("message", "Something went wrong. Please contact system admin");
         }};
     }
+
+    @ExceptionHandler(value = {InvalidStatusException.class})
+    @ResponseStatus(value = HttpStatus.BAD_REQUEST)
+    public Map<String, String> genericExceptionHandler(InvalidStatusException ex) {
+        return new HashMap(){{
+            put("error", "invalidStatusValue");
+            put("message", ex.getMessage());
+        }};
+    }
 }
