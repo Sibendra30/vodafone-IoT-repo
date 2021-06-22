@@ -32,19 +32,19 @@ public class DeviceControllerIT {
     @Order(1)
     void getDevicesByStatus() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/device")
-                .param("simStatus", "Active")
+                .param("simStatus", "Waiting_for_activation")
                 .param("pageNumber", "1")
                 .param("pageSize", "10"))
                 .andExpect(MockMvcResultMatchers.status().is(HttpStatus.OK.value()))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.items", Matchers.notNullValue()))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.items[0].id", Matchers.is("device1")))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.items[0].id", Matchers.notNullValue()))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.items[0].status", Matchers.is("READY")))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.items[0].sim.status", Matchers.is("Active")))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.items[0].sim.status", Matchers.is("Waiting_for_activation")))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.metadata", Matchers.notNullValue()))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.metadata.pageNumber", Matchers.is(1)))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.metadata.pageSize", Matchers.is(10)))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.metadata.totalElements", Matchers.is(1)))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.metadata.totalPages", Matchers.is(1)))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.metadata.totalElements", Matchers.is(11)))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.metadata.totalPages", Matchers.is(2)))
                 .andReturn();
     }
 
