@@ -7,7 +7,7 @@ This is a Java-Springboot based project containing APIs to fetch devices, update
 *mvn clean test*
 
 ## How to run integration test ?
-*mvn clean verify*
+*mvn clean verify -Dspring.profiles.active=IT*
 
 ## How to run the project
 *mvn spring-boot:run*
